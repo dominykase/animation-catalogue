@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div#container {
+    position: relative;
+    width: 200px;
+    border: 1px solid black;
+}
+
+div#container p {
+    padding: 10px;
+}

@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: black;
+}
+
+.container {
+    padding-top: 100px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: "helvetica";
+    color: white;
+}
+
+.textContainer {
+    width: 300px;
+    height: 100px;
+}
+
+#loadingText {
+    opacity: 1;
+    font-size: 32px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#loadingSpinner1 {
+    font-size: 50px;
+    animation: 1s spin infinite linear;
+}
+
+#loadingSpinner2 {
+    margin: 50px auto;
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(255, 255, 255, 0.5);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: 1s spin infinite ease-in-out;
+}
+
+#loadingSpinner3 {
+    margin: 50px auto;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-top: 3px solid white;
+    border-right: 3px solid transparent; 
+    animation: 1s spin infinite linear;
+}
+
+#dotsContainer {
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes bounce {
+    0%, 80%, 100% {
+        transform: scale(0);
+    }
+
+    40% {
+        transform: scale(1.5);
+    }
+}
+
+.dot {
+    margin: 0 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    animation: 1s bounce infinite ease-in-out;
+}
+
+#dot2 {
+    animation-delay: 0.15s;
+}
+
+#dot3 {
+    animation-delay: 0.3s;
+}
