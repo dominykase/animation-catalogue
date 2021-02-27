@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.imageTop {
+    width: 100%;
+}
+
+.contentContainer {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.cardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    height: 100px;
+    margin: 50px;
+    border: 1px solid black;
+
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+
+.card.appear {
+    opacity: 1;
+}
+
+.fromLeftContainer,
+.fromRightContainer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.para {
+    padding: 50px;
+    text-align: justify;
+}
+
+.slide-in {
+    height: 350px;
+}
