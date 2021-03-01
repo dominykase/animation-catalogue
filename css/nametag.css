@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1px) {
+    .wrapper {
+        width: 80vw;
+        height: 20vh;
+    }
+
+    #textLarge {
+        font-size: 2vw;
+    }
+
+    #textSmall {
+        font-size: 1vw;
+    }
+}
+
+@media (min-width: 420px) {
+    #textLarge {
+        font-size: 25px;
+    }
+
+    #textSmall {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 650px) {
+    .wrapper {
+        width: 600px;
+        height: 150px;
+    }
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 1px;
+    height: 1px;
+    background-color: black;
+    border-radius: 50%;
+    box-sizing: border-box;
+    border-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "dosis";
+    font-weight: 600;
+}
+
+#textLarge, #textSmall {
+    display: none;
+    opacity: 0;
+}

@@ -50,3 +50,27 @@
 .slide-in {
     height: 350px;
 }
+
+.slide-in.fromRight,
+.para.fromLeft {
+    transform: translateX(300px);
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out, 
+        transform 1000ms ease-out;
+}
+
+.slide-in.fromLeft,
+.para.fromRight {
+    transform: translateX(-300px);
+    opacity: 0;
+    transition: opacity 1000ms ease-in-out, 
+        transform 1000ms ease-out;
+}
+
+.para.fromLeft.appear,
+.para.fromRight.appear,
+.slide-in.fromLeft.appear,
+.slide-in.fromRight.appear {
+    transform: translateX(0);
+    opacity: 1;
+}
