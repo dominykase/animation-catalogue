@@ -15,21 +15,74 @@
 .cardContainer {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .card {
     width: 250px;
     height: 100px;
-    margin: 50px;
+    margin: 20px;
     border: 1px solid black;
 
     opacity: 0;
     transition: opacity 500ms ease-in;
 }
 
+.card.slide {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
+.card.slideVertical {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
+.card.flipX {
+    opacity: 0;
+    transform: rotateX(180deg);
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
+.card.flipY {
+    opacity: 0;
+    transform: rotateY(180deg);
+    transition: opacity 500ms ease-out, transform 500ms ease-out;
+}
+
 .card.appear {
     opacity: 1;
+}
+
+.card.slide.appear {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.card.slideVertical.appear {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.card.flipX.appear {
+    opacity: 1;
+    transform: rotateX(0);
+}
+
+.card.flipY.appear {
+    opacity: 1;
+    transform: rotateY(0);
+}
+
+.card.col2 {
+    transition-delay: 0.15s;
+}
+
+.card.col3 {
+    transition-delay: 0.3s;
 }
 
 .fromLeftContainer,
